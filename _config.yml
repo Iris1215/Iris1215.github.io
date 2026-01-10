@@ -29,7 +29,8 @@ author:
   bio              : "Short biography for the left-hand sidebar"
   location         : "Earth"
   employer         : "Red Brick University"
-  uri              : # yinanli2@asu.edu" 
+  uri              : # URL
+  email            : "yinanli2@asu.edu" 
 
   # Academic websites
   academia         : # URL
