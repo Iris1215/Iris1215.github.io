@@ -7,4 +7,6 @@ redirect_from:
   - /about.html
 ---
 
-I am a third-year Computer Science Ph.D. student in School of Computing and Augmented Intelligence at Arizona State University, working with [Dr. Hasti Seifi](https://hastiseifi.com/). Prior to that, I graduated from Carnegie Mellon University in May 2023 with a master degree in Electrical and Computer Engineering, and I graduated from The Hong Kong Polytechnic University in May 2021 with a bachelor degree in Electronic and Information Engineering.
+I am a third-year Ph.D. student in Computer Science at the School of Computing and Augmented Intelligence, Arizona State University, advised by [Dr. Hasti Seifi](https://hastiseifi.com/). Previously, I earned my M.S. in Electrical and Computer Engineering from Carnegie Mellon University (2023) and my Bachelor’s degree in Electronic and Information Engineering from The Hong Kong Polytechnic University (2021).
+
+I work on Human-AI Interaction and Haptics. My research explores multimodal haptic perception and develop AI-powered computational systems and tools for designing perceptually grounded haptic experiences.
