@@ -20,7 +20,7 @@
   {% endif %}
 {% endif %}
 
-{% if post.slidesurl %}
+<!-- {% if post.slidesurl %}
   {% if post.slidesurl contains 'http' %}
     {% assign slides_href = post.slidesurl %}
   {% else %}
@@ -34,7 +34,7 @@
   {% else %}
     {% assign bibtex_href = post.bibtexurl | prepend: base_path %}
   {% endif %}
-{% endif %}
+{% endif %} -->
 
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
@@ -67,14 +67,18 @@
     </h2>
 
     {% if post.collection == 'publications' %}
-      {% if post.authors %}
-        <p>{{ post.authors | markdownify | remove: '<p>' | remove: '</p>' }}</p>
-      {% endif %}
-      {% if post.pubinfo %}
-        <p>{{ post.pubinfo | markdownify | remove: '<p>' | remove: '</p>' }}</p>
-      {% elsif post.venue or post.date %}
-        <p>{% if post.venue %}<i>{{ post.venue }}</i>{% endif %}{% if post.venue and post.date %}, {% endif %}{% if post.date %}{{ post.date | default: "1900-01-01" | date: "%Y" }}{% endif %}</p>
-      {% endif %}
+      <p>
+      {%- if post.authors -%}
+        {{ post.authors | markdownify | remove: '<p>' | remove: '</p>' | rstrip }}
+      {%- endif -%}
+      {%- if post.pubinfo -%}
+        {%- if post.authors -%}. {% endif -%}
+        {{ post.pubinfo | markdownify | remove: '<p>' | remove: '</p>' }}
+      {%- elsif post.venue or post.date -%}
+        {%- if post.authors -%}. {% endif -%}
+        {% if post.venue %}<i>{{ post.venue }}</i>{% endif %}{% if post.venue and post.date %}, {% endif %}{% if post.date %}{{ post.date | default: "1900-01-01" | date: "%Y" }}{% endif %}
+      {%- endif -%}
+      </p>
     {% endif %}
     
     {% if post.read_time %}
