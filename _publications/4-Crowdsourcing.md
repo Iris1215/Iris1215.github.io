@@ -3,6 +3,6 @@ title: "A Video-Based Crowdsourcing Study on User Perceptions of Physically Assi
 permalink: /publication/4-Crowdsourcing
 authors: "**Yinan Li**, Hasti Seifi"
 pubinfo: "In Proceedings of the Extended Abstracts of the 2025 ACM Conference on Human Factors in Computing Systems (CHI EA ’25), page 1-8."
-paperurl: 'https://iris215.github.io/files/3706599.3720132.pdf'
+paperurl: 'https://iris1215.github.io/files/3706599.3720132.pdf'
 
 ---
