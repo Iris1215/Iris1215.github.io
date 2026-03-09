@@ -4,5 +4,6 @@ permalink: /publication/8-Sound2Hap
 authors: "**Yinan Li**, Hasti Seifi"
 pubinfo: "To Appear In Proceedings of the 2026 ACM Conference on Human Factors in Computing Systems (CHI ’26), page 1-19."
 paperurl: 'https://arxiv.org/abs/2601.12245'
+award: "Best Paper Award"
 ---
 

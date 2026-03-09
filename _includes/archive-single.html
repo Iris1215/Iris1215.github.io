@@ -67,6 +67,11 @@
     </h2>
 
     {% if post.collection == 'publications' %}
+      {% if post.award %}
+        <p class="publication-award" style="display: inline-block; color: #b8860b; font-weight: bold; font-size: 0.85em; margin: 0.2em 0;">
+          &#127942; {{ post.award }}
+        </p>
+      {% endif %}
       <p>
       {%- if post.authors -%}
         {{ post.authors | markdownify | remove: '<p>' | remove: '</p>' | rstrip }}
